@@ -51,7 +51,7 @@ noinst_LIBRARIES = libnpcommon.a
 libnpcommon_a_SOURCES = utils.c netutils.c sslutils.c runcmd.c	\
 	popen.c utils.h netutils.h popen.h common.h runcmd.c runcmd.h
 
-BASEOBJS = libnpcommon.a ../lib/libmonitoringplug.a ../gl/libgnu.a $(LIB_CRYPTO)
+BASEOBJS = libnpcommon.a ../lib/libmonitoringplug.a ../gl/libgnu.a
 NETOBJS = $(BASEOBJS) $(EXTRA_NETOBLS)
 NETLIBS = $(NETOBJS) $(SOCKETLIBS)
 SSLOBJS = $(BASEOBJS) $(NETLIBS) $(SSLLIBS) $(LIB_CRYPTO)

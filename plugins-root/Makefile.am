@@ -26,7 +26,7 @@ EXTRA_PROGRAMS = pst3
 
 EXTRA_DIST = t pst3.c
 
-BASEOBJS = ../plugins/utils.o ../lib/libmonitoringplug.a ../gl/libgnu.a $(LIB_CRYPTO)
+BASEOBJS = ../plugins/utils.o ../lib/libmonitoringplug.a ../gl/libgnu.a
 NETOBJS = ../plugins/netutils.o $(BASEOBJS) $(EXTRA_NETOBJS)
 NETLIBS = $(NETOBJS) $(SOCKETLIBS)
 

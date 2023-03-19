@@ -540,7 +540,7 @@ if ! test x"$with_openssl" = x"no"; then
 	AC_CHECK_LIB(crypto,CRYPTO_new_ex_data)
 	if test "$ac_cv_lib_crypto_CRYPTO_new_ex_data" = "yes"; then
 		dnl Check for SSL lib
-		AC_CHECK_LIB(ssl,main, SSLLIBS="-lssl -lcrypto",,-lcrypto)
+		AC_CHECK_LIB(ssl,main, SSLLIBS="-lssl -lcrypto",,[crypto])
 	fi
 	LIBS="$_SAVEDLIBS"
 
