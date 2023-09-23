@@ -1,0 +1,9 @@
+clang
+%h
+-Wall
+-Wextra
+%c -std=c11
+-I.
+-Iplugins
+-Ilib
+-Igl
